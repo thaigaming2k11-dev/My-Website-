@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff7ca8">
+<title>CODE DLOVE 💌 | 20/10</title>
+<style>
+  :root { --pink:#ff6f9f; --deep:#a83266; --cream:#fff7fa; --ink:#592b43; }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; min-height:100vh; overflow-x:hidden; display:grid; place-items:center;
+    padding:24px 14px; color:var(--ink);
+    font-family: "Trebuchet MS", system-ui, sans-serif;
+    background: radial-gradient(circle at top, #ffe1ec 0, #f8c5dc 35%, #cda6d8 100%);
+  }
+  .sparkles { position:fixed; inset:0; overflow:hidden; pointer-events:none; }
+  .heart { position:absolute; bottom:-40px; opacity:.7; animation:floatUp linear infinite; }
+  @keyframes floatUp { to { transform:translateY(-115vh) rotate(25deg); opacity:0; } }
+  .wrap { width:min(100%, 440px); position:relative; z-index:1; }
+  .brand { text-align:center; color:#8f2b60; letter-spacing:4px; font-size:.78rem; font-weight:800; margin-bottom:12px; }
+  .card {
+    background:rgba(255,250,252,.94); border:1px solid rgba(255,255,255,.9);
+    border-radius:28px; padding:25px 22px; text-align:center;
+    box-shadow:0 22px 60px rgba(115,35,81,.22);
+    position:relative; overflow:hidden;
+  }
+  .card:before { content:""; position:absolute; inset:9px; border:1px dashed #efa0bf; border-radius:21px; pointer-events:none; }
+  .content { position:relative; z-index:1; }
+  .rose { font-size:2.8rem; line-height:1.2; }
+  h1 { font-family: Georgia, serif; font-size:clamp(2.2rem, 11vw, 3.1rem); color:#cf4d83; margin:10px 0 4px; }
+  .subtitle { margin:0 auto 20px; line-height:1.6; color:#86516b; }
+  label { display:block; font-size:.9rem; font-weight:700; margin-bottom:8px; }
+  input {
+    width:100%; padding:14px 12px; border:1.5px solid #ed9cbd; border-radius:14px;
+    background:#fff; text-align:center; color:#7b3157; font-size:1rem; outline:none;
+  }
+  input:focus { border-color:#ce4e83; box-shadow:0 0 0 3px #f9d5e4; }
+  button {
+    border:0; border-radius:999px; padding:13px 20px; margin-top:12px; width:100%;
+    color:white; font-size:1rem; font-weight:800; cursor:pointer;
+    background:linear-gradient(135deg,#ff8db4,#d84f89); box-shadow:0 8px 18px #eaa1bf;
+  }
+  button:active { transform:scale(.98); }
+  .hint { min-height:24px; margin:12px 0 0; font-size:.9rem; color:#a43c69; }
+  .letter { display:none; text-align:left; animation:appear .65s ease both; }
+  .letter.show { display:block; }
+  @keyframes appear { from {opacity:0; transform:translateY(12px) scale(.98)} to {opacity:1; transform:none} }
+  .letter h2 { text-align:center; color:#c6447c; font-family:Georgia,serif; font-size:1.8rem; }
+  .letter p { line-height:1.85; }
+  .signature { text-align:right; color:#c6447c; font-family:Georgia,serif; font-style:italic; font-size:1.1rem; }
+  .divider { text-align:center; color:#e77da6; margin:15px 0; letter-spacing:7px; }
+  .footer { text-align:center; color:#7d3a60; font-size:.78rem; margin-top:16px; }
+  .back { background:#f2d1e0; color:#853858; box-shadow:none; }
+  .hidden { display:none !important; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation:none !important; scroll-behavior:auto !important; } }
+</style>
+</head>
+<body>
+<div class="sparkles" id="sparkles" aria-hidden="true"></div>
+<main class="wrap">
+  <div class="brand">♡ A LITTLE GIFT OF LOVE ♡</div>
+  <section class="card">
+    <div class="content">
+      <div class="rose" aria-hidden="true">🌹💌🌷</div>
+      <h1>CODE DLOVE</h1>
+      <p class="subtitle">Một chiếc thư nhỏ xinh dành tặng bạn<br>nhân ngày Phụ nữ Việt Nam 20/10 💗</p>
+
+      <form id="codeForm">
+        <label for="code">💌 Nhập mã bí mật để mở thư</label>
+        <input id="code" name="code" type="text" placeholder="Nhập mã DLOVE20/10" autocomplete="off" autocapitalize="characters" required>
+        <button type="submit">MỞ THƯ TÌNH 💖</button>
+        <p class="hint" id="hint" role="status" aria-live="polite">Gợi ý: DLOVE20/10</p>
+      </form>
+
+      <article class="letter" id="letter" aria-live="polite">
+        <div class="divider">♡ ✧ ♡</div>
+        <h2>Gửi bạn thương mến 💌</h2>
+        <p>Chúc bạn một ngày 20/10 thật rực rỡ, luôn vui vẻ, bình an và được yêu thương theo cách dịu dàng nhất.</p>
+        <p>Mong rằng mỗi ngày của bạn đều có những điều nhỏ bé khiến bạn mỉm cười, có đủ dũng khí để theo đuổi ước mơ và luôn nhớ rằng bạn xứng đáng với những điều tốt đẹp.</p>
+        <p>Cảm ơn bạn vì đã là chính mình — một phiên bản duy nhất và đáng quý. Chúc bạn luôn hạnh phúc, tự tin và tỏa sáng nhé! 🌷</p>
+        <div class="divider">🌸 💗 🌸</div>
+        <p class="signature">Thân gửi bằng tất cả yêu thương,<br>CODE DLOVE ♡</p>
+        <button type="button" class="back" id="backBtn">Đóng thư 💌</button>
+      </article>
+    </div>
+  </section>
+  <p class="footer">Made with ♡ for 20/10 · DLOVE</p>
+</main>
+<script>
+  const form = document.getElementById('codeForm');
+  const input = document.getElementById('code');
+  const hint = document.getElementById('hint');
+  const letter = document.getElementById('letter');
+  const sparkles = document.getElementById('sparkles');
+
+  // Đây là mã mở thư vui vẻ ở phía trình duyệt, không phải bảo mật thật.
+  const correctCode = 'DLOVE20/10';
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (input.value.trim().toUpperCase() === correctCode) {
+      form.classList.add('hidden');
+      letter.classList.add('show');
+      hint.textContent = '';
+      document.querySelector('.subtitle').textContent = 'Một món quà nhỏ, gửi đến bạn bằng sự chân thành 💗';
+      for (let i = 0; i < 18; i++) makeHeart();
+    } else {
+      hint.textContent = 'Mã chưa đúng rồi nè 🥺 Thử nhập DLOVE20/10 nhé!';
+      input.focus();
+    }
+  });
+
+  document.getElementById('backBtn').addEventListener('click', function () {
+    letter.classList.remove('show');
+    form.classList.remove('hidden');
+    input.value = '';
+    hint.textContent = 'Thư đã được gấp lại. Hẹn bạn lần mở tiếp theo 💗';
+    input.focus();
+  });
+
+  function makeHeart() {
+    const heart = document.createElement('span');
+    heart.className = 'heart';
+    heart.textContent = ['💗','💕','♡','🌸','💖'][Math.floor(Math.random()*5)];
+    heart.style.left = Math.random()*100 + '%';
+    heart.style.fontSize = (16 + Math.random()*20) + 'px';
+    heart.style.animationDuration = (4 + Math.random()*5) + 's';
+    sparkles.appendChild(heart);
+    setTimeout(() => heart.remove(), 9500);
+  }
+  for (let i = 0; i < 16; i++) {
+    const heart = document.createElement('span');
+    heart.className = 'heart';
+    heart.textContent = ['♡','💗','✧','🌸'][i%4];
+    heart.style.left = Math.random()*100 + '%';
+    heart.style.fontSize = (12 + Math.random()*18) + 'px';
+    heart.style.animationDuration = (7 + Math.random()*9) + 's';
+    heart.style.animationDelay = (-Math.random()*12) + 's';
+    sparkles.appendChild(heart);
+  }
+</script>
+</body>
+</html>
